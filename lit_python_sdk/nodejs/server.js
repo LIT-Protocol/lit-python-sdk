@@ -118,7 +118,7 @@ app.listen(port, async () => {
   });
   await app.locals.litNodeClient.connect();
   app.locals.ethersWallet = new ethers.Wallet(
-    process.env.LIT_SDK_SERVER_DEPLOYER_PRIVATE_KEY,
+    process.env.LIT_PYTHON_SDK_PRIVATE_KEY,
     new ethers.providers.JsonRpcProvider(LIT_RPC.CHRONICLE_YELLOWSTONE)
   );
   console.log(`Server running at http://localhost:${port}`);
