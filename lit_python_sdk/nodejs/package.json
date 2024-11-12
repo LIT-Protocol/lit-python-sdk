@@ -1,0 +1,24 @@
+{
+  "name": "lit-sdk-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test:only": "node test.js",
+    "test": "concurrently \"node server.js\" \"sleep 2 && node test.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@lit-protocol/constants": "^6.11.0",
+    "@lit-protocol/lit-node-client-nodejs": "^6.11.0",
+    "body-parser": "^1.20.2",
+    "ethers": "^5.7.2",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.9",
+    "node-localstorage": "^3.0.5",
+    "concurrently": "^8.2.2"
+  }
+}
