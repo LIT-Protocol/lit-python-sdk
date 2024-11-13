@@ -8,4 +8,11 @@ The SDK uses a Node.js server that runs the LitNodeClient, to connect to the Lit
 
 ## How to use it from python
 
-We need to bundle the dependencies of the nodejs server before this is easy. To do it now, run "npm install" in the lit_python_sdk/nodejs folder. Make sure you have the LIT_SDK_SERVER_PRIVATE_KEY environment variable set to your private key. Then run "pytest" to test it.
+We need to bundle the dependencies of the nodejs server before this is easy. To do it now, run `npm install` in the `lit_python_sdk/nodejs` folder. Make sure you have the `LIT_PYTHON_SDK_PRIVATE_KEY` environment variable set to your private key.
+
+Then, make sure you have installed:
+
+- pytest `pip install pytest`
+- run `pip install -e . ` in the root directory
+
+Finally, run `pytest` to in the root directory to test it.
