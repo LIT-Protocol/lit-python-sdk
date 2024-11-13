@@ -17,8 +17,7 @@ const {
   generateAuthSig,
 } = require("@lit-protocol/auth-helpers");
 const { LitContracts } = require("@lit-protocol/contracts-sdk");
-const { LitAuthClient } = require("@lit-protocol/lit-auth-client");
-
+const { getSessionSigs } = require("./utils");
 if (typeof localStorage === "undefined" || localStorage === null) {
   var LocalStorage = require("node-localstorage").LocalStorage;
   localStorage = new LocalStorage("./lit-session-storage");
@@ -66,36 +65,7 @@ app.post("/executeJs", async (req, res) => {
       });
     }
 
-    // get session sigs
-    const sessionSigs = await app.locals.litNodeClient.getSessionSigs({
-      chain: "ethereum",
-      expiration: new Date(Date.now() + 1000 * 60 * 10).toISOString(), // 10 minutes
-      resourceAbilityRequests: [
-        {
-          resource: new LitActionResource("*"),
-          ability: LitAbility.LitActionExecution,
-        },
-      ],
-      authNeededCallback: async ({
-        uri,
-        expiration,
-        resourceAbilityRequests,
-      }) => {
-        const toSign = await createSiweMessage({
-          uri,
-          expiration,
-          resources: resourceAbilityRequests,
-          walletAddress: await app.locals.ethersWallet.getAddress(),
-          nonce: await app.locals.litNodeClient.getLatestBlockhash(),
-          litNodeClient: app.locals.litNodeClient,
-        });
-
-        return await generateAuthSig({
-          signer: app.locals.ethersWallet,
-          toSign,
-        });
-      },
-    });
+    const sessionSigs = await getSessionSigs(app);
 
     // execute js
     const response = await app.locals.litNodeClient.executeJs({
@@ -119,6 +89,8 @@ app.post("/createWallet", async (req, res) => {
   const contractClient = new LitContracts({
     signer: app.locals.ethersWallet,
     litNodeClient: app.locals.litNodeClient,
+    network: LitNetwork.DatilDev,
+    debug: true,
   });
   await contractClient.connect();
 
@@ -156,6 +128,20 @@ app.post("/createWallet", async (req, res) => {
   });
 
   res.json(mintInfo);
+});
+
+app.post("/sign", async (req, res) => {
+  const { toSign, pkpPublicKey } = req.body;
+
+  const sessionSigs = await getSessionSigs(app);
+
+  const signingResult = await app.locals.litNodeClient.pkpSign({
+    pubKey: pkpPublicKey,
+    sessionSigs,
+    toSign: ethers.utils.arrayify(toSign),
+  });
+
+  res.json({ signature: signingResult.signature });
 });
 
 // Basic health check endpoint
