@@ -37,6 +37,16 @@ class LitClient:
             json={"code": code}
         )
         return response.json()
+    
+    def create_wallet(self) -> dict:
+        """Creates a new wallet on the Node.js server"""
+        response = requests.post(f"http://localhost:{self.port}/createWallet")
+        return response.json()
+    
+    def sign(self, to_sign: str, pkp_public_key: str) -> dict:
+        """Signs a message with a PKP"""
+        response = requests.post(f"http://localhost:{self.port}/sign", json={"toSign": to_sign, "pkpPublicKey": pkp_public_key})
+        return response.json()
 
     def __del__(self):
         """Cleanup: Stop the Node.js server when the client is destroyed"""
