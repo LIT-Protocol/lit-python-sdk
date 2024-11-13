@@ -1,14 +1,23 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const LitJsSdk = require("@lit-protocol/lit-node-client-nodejs");
-const { LitNetwork, LIT_RPC } = require("@lit-protocol/constants");
+const {
+  LitNetwork,
+  LIT_RPC,
+  AuthMethodScope,
+  AuthMethodType,
+  ProviderType,
+} = require("@lit-protocol/constants");
 const ethers = require("ethers");
 const {
   LitAbility,
   LitActionResource,
+  LitPKPResource,
   createSiweMessage,
   generateAuthSig,
 } = require("@lit-protocol/auth-helpers");
+const { LitContracts } = require("@lit-protocol/contracts-sdk");
+const { LitAuthClient } = require("@lit-protocol/lit-auth-client");
 
 if (typeof localStorage === "undefined" || localStorage === null) {
   var LocalStorage = require("node-localstorage").LocalStorage;
@@ -104,6 +113,49 @@ app.post("/executeJs", async (req, res) => {
       message: error.message,
     });
   }
+});
+
+app.post("/createWallet", async (req, res) => {
+  const contractClient = new LitContracts({
+    signer: app.locals.ethersWallet,
+    litNodeClient: app.locals.litNodeClient,
+  });
+  await contractClient.connect();
+
+  const toSign = await createSiweMessage({
+    uri: "http://localhost:3092/createWallet",
+    expiration: new Date(Date.now() + 1000 * 60 * 10).toISOString(), // 10 minutes
+    resources: [
+      {
+        resource: new LitActionResource("*"),
+        ability: LitAbility.LitActionExecution,
+      },
+      {
+        resource: new LitPKPResource("*"),
+        ability: LitAbility.PKPSigning,
+      },
+    ],
+    walletAddress: app.locals.ethersWallet.address,
+    nonce: await app.locals.litNodeClient.getLatestBlockhash(),
+    litNodeClient: app.locals.litNodeClient,
+  });
+
+  const authSig = await generateAuthSig({
+    signer: app.locals.ethersWallet,
+    toSign,
+  });
+
+  const authMethod = {
+    authMethodType: AuthMethodType.EthWallet,
+    accessToken: JSON.stringify(authSig),
+  };
+
+  const mintInfo = await contractClient.mintWithAuth({
+    authMethod: authMethod,
+    scopes: [AuthMethodScope.SignAnything],
+  });
+
+  res.json(mintInfo);
 });
 
 // Basic health check endpoint

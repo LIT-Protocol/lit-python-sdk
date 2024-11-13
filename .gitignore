@@ -20,6 +20,7 @@ wheels/
 .installed.cfg
 *.egg
 virtualenv/
+.pytest_cache/
 
 # Node
 node_modules/

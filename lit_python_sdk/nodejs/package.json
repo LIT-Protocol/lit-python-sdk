@@ -13,12 +13,14 @@
   "description": "",
   "dependencies": {
     "@lit-protocol/constants": "^6.11.0",
+    "@lit-protocol/contracts-sdk": "^6.11.0",
+    "@lit-protocol/lit-auth-client": "^6.11.0",
     "@lit-protocol/lit-node-client-nodejs": "^6.11.0",
     "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
     "ethers": "^5.7.2",
     "express": "^4.18.2",
     "node-fetch": "^2.6.9",
-    "node-localstorage": "^3.0.5",
-    "concurrently": "^8.2.2"
+    "node-localstorage": "^3.0.5"
   }
 }

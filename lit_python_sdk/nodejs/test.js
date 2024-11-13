@@ -55,11 +55,20 @@ async function testExecuteJs() {
   }
 }
 
+async function testCreateWallet() {
+  const response = await fetch("http://localhost:3092/createWallet", {
+    method: "POST",
+  });
+  const data = await response.json();
+  console.log("Response:", data);
+}
+
 // Run the test with readiness check
 async function runTest() {
   try {
     await waitUntilReady();
     await testExecuteJs();
+    await testCreateWallet();
   } catch (error) {
     console.error("Test failed:", error);
     process.exit(1);
