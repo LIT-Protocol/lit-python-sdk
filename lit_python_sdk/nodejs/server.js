@@ -127,21 +127,30 @@ app.post("/createWallet", async (req, res) => {
     scopes: [AuthMethodScope.SignAnything],
   });
 
+  // save to local storage
+  localStorage.setItem("pkp", JSON.stringify(mintInfo.pkp));
+  app.locals.pkp = mintInfo.pkp;
+
   res.json(mintInfo);
 });
 
+app.get("/pkp", (req, res) => {
+  const pkp = localStorage.getItem("pkp");
+  res.json(JSON.parse(pkp));
+});
+
 app.post("/sign", async (req, res) => {
-  const { toSign, pkpPublicKey } = req.body;
+  const { toSign } = req.body;
 
   const sessionSigs = await getSessionSigs(app);
 
   const signingResult = await app.locals.litNodeClient.pkpSign({
-    pubKey: pkpPublicKey,
+    pubKey: app.locals.pkp.publicKey,
     sessionSigs,
     toSign: ethers.utils.arrayify(toSign),
   });
 
-  res.json({ signature: signingResult.signature });
+  res.json({ signature: signingResult });
 });
 
 // Basic health check endpoint
@@ -159,5 +168,10 @@ app.listen(port, async () => {
     process.env.LIT_PYTHON_SDK_PRIVATE_KEY,
     new ethers.providers.JsonRpcProvider(LIT_RPC.CHRONICLE_YELLOWSTONE)
   );
+  // see if we can load the pkp from local storage
+  const pkp = localStorage.getItem("pkp");
+  if (pkp) {
+    app.locals.pkp = JSON.parse(pkp);
+  }
   console.log(`Server running at http://localhost:${port}`);
 });

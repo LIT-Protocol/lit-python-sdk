@@ -121,7 +121,7 @@ async function testCreateWallet() {
   return pkp;
 }
 
-async function testSign(pkp) {
+async function testSign() {
   const toSign = ethers.utils.keccak256(
     ethers.utils.toUtf8Bytes("The answer to the universe is 42.")
   );
@@ -130,7 +130,7 @@ async function testSign(pkp) {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ toSign, pkpPublicKey: pkp.publicKey }),
+    body: JSON.stringify({ toSign }),
   });
 
   const data = await response.json();
@@ -143,8 +143,8 @@ async function runTest() {
   try {
     await waitUntilReady();
     await testExecuteJs();
-    const pkp = await testCreateWallet();
-    await testSign(pkp);
+    await testCreateWallet();
+    await testSign();
   } catch (error) {
     console.error("Test failed:", error);
     process.exit(1);

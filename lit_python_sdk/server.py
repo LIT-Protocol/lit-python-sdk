@@ -15,11 +15,12 @@ class NodeServer:
         if self.process is not None:
             return
 
+        log_file = open(self.server_folder / "server.log", "w")
         self.process = subprocess.Popen(
             ["npm", "start"],
             env={**os.environ, "PORT": str(self.port)},
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
+            stdout=log_file,
+            stderr=log_file,
             cwd=self.server_folder
         )
 

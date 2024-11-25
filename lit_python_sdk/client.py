@@ -6,8 +6,17 @@ from .server import NodeServer
 class LitClient:
     def __init__(self, port=3092):
         self.port = port
-        self.server = NodeServer(port)
-        self._start_server()
+        # Check if server is already running by trying to connect
+        try:
+            response = requests.post(f"http://localhost:{port}/isReady")
+            if response.json().get("ready"):
+                # Server already running, don't start a new one
+                self.server = None
+                return
+        except requests.exceptions.ConnectionError:
+            # Server not running, start it
+            self.server = NodeServer(port)
+            self._start_server()
 
     def _start_server(self):
         """Starts the Node.js server and waits for it to be ready"""
@@ -43,12 +52,17 @@ class LitClient:
         response = requests.post(f"http://localhost:{self.port}/createWallet")
         return response.json()
     
-    def sign(self, to_sign: str, pkp_public_key: str) -> dict:
+    def get_pkp(self) -> dict:
+        """Gets the PKP from the Node.js server"""
+        response = requests.get(f"http://localhost:{self.port}/pkp")
+        return response.json()
+    
+    def sign(self, to_sign: str) -> dict:
         """Signs a message with a PKP"""
-        response = requests.post(f"http://localhost:{self.port}/sign", json={"toSign": to_sign, "pkpPublicKey": pkp_public_key})
+        response = requests.post(f"http://localhost:{self.port}/sign", json={"toSign": to_sign})
         return response.json()
 
     def __del__(self):
         """Cleanup: Stop the Node.js server when the client is destroyed"""
-        if hasattr(self, 'server'):
+        if hasattr(self, 'server') and self.server is not None:
             self.server.stop() 

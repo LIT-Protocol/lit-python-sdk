@@ -31,5 +31,9 @@ def test_create_wallet_and_sign():
     wallet = client.create_wallet()
     print(wallet)
     to_sign = "0xadb20420bde8cda6771249188817098fca8ccf8eef2120a31e3f64f5812026bf"
-    signature = client.sign(to_sign, wallet['pkp']['publicKey'])
+    signature = client.sign(to_sign)
     print(signature)
+
+def test_multi_connect():
+    client2 = connect()
+    assert client2.get_pkp() == client.get_pkp()
