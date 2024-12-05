@@ -7,6 +7,7 @@ const {
   AuthMethodScope,
   AuthMethodType,
   ProviderType,
+  LIT_ABILITY,
 } = require("@lit-protocol/constants");
 const ethers = require("ethers");
 const {
@@ -100,11 +101,11 @@ app.post("/createWallet", async (req, res) => {
     resources: [
       {
         resource: new LitActionResource("*"),
-        ability: LitAbility.LitActionExecution,
+        ability: LIT_ABILITY.LitActionExecution,
       },
       {
         resource: new LitPKPResource("*"),
-        ability: LitAbility.PKPSigning,
+        ability: LIT_ABILITY.PKPSigning,
       },
     ],
     walletAddress: app.locals.ethersWallet.address,

@@ -5,6 +5,9 @@ const {
   createSiweMessage,
   generateAuthSig,
 } = require("@lit-protocol/auth-helpers");
+const {
+  LIT_ABILITY,
+} = require("@lit-protocol/constants");
 
 async function getSessionSigs(app) {
   // get session sigs
@@ -14,11 +17,11 @@ async function getSessionSigs(app) {
     resourceAbilityRequests: [
       {
         resource: new LitActionResource("*"),
-        ability: LitAbility.LitActionExecution,
+        ability: LIT_ABILITY.LitActionExecution,
       },
       {
         resource: new LitPKPResource("*"),
-        ability: LitAbility.PKPSigning,
+        ability: LIT_ABILITY.PKPSigning,
       },
     ],
     authNeededCallback: async ({
