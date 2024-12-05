@@ -12,7 +12,10 @@ We need to bundle the dependencies of the nodejs server before this is easy. To 
 
 Then, make sure you have installed:
 
-- pytest `pip install pytest`
-- run `pip install -e . ` in the root directory
+- `pip install pytest`
+- run `pip install -e .` in the root directory
 
-Finally, run `pytest` to in the root directory to test it.
+Finally:
+
+1. Go to `lit_python_sdk/nodejs` and run `LIT_PYTHON_SDK_PRIVATE_KEY=XXX node server.js`
+2. Then run `pytest` at the root directory
