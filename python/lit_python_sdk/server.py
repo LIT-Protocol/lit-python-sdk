@@ -8,7 +8,7 @@ class NodeServer:
     def __init__(self, port: int):
         self.port = port
         self.process = None
-        self.server_folder = Path(__file__).parent / "nodejs"
+        self.server_folder = Path(__file__).parent / "../../js-sdk-server"
 
     def start(self):
         """Starts the Node.js server process"""
