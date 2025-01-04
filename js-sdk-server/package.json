@@ -5,8 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "node test.js",
-    "build": "esbuild server.js --bundle --platform=node --outfile=../python/lit_python_sdk/bundled_server.js",
-    "dev": "esbuild server.js --bundle --platform=node --outfile=../python/lit_python_sdk/bundled_server.js --watch"
+    "build": "concurrently \"esbuild server.js --bundle --platform=node --outfile=../python/lit_python_sdk/bundled_server.js\" \"esbuild server.js --bundle --platform=node --outfile=../go/lit_go_sdk/bundled_server.js\"",
+    "dev": "concurrently \"esbuild server.js --bundle --platform=node --outfile=../python/lit_python_sdk/bundled_server.js --watch\" \"esbuild server.js --bundle --platform=node --outfile=../go/lit_go_sdk/bundled_server.js --watch\""
   },
   "keywords": [],
   "author": "",
