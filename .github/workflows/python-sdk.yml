@@ -35,5 +35,7 @@ jobs:
 
       - name: Run tests
         working-directory: python
+        env:
+          LIT_POLYGLOT_SDK_TEST_PRIVATE_KEY: ${{ secrets.LIT_POLYGLOT_SDK_TEST_PRIVATE_KEY }}
         run: |
           pytest tests/ -v

@@ -1,40 +1,40 @@
-Sat, 04 Jan 2025 00:33:57 GMT lit-js-sdk:constants:errors deprecated LitErrorKind is deprecated and will be removed in a future version. Use LIT_ERROR_KIND instead. at bundled_server.js:9:50
-Sat, 04 Jan 2025 00:33:57 GMT lit-js-sdk:constants:constants deprecated LitNetwork is deprecated and will be removed in a future version. Use LIT_NETWORK instead. at node:events:633:28
-Sat, 04 Jan 2025 00:33:57 GMT lit-js-sdk:constants:constants deprecated LogLevel is deprecated and will be removed in a future version. Use LOG_LEVEL instead. at node:events:633:28
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.618Z] [36m[DEBUG][0m [contract-sdk] Validator's URL: https://15.235.83.220:7470
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.619Z] [36m[DEBUG][0m [core] [_getValidatorData] epochInfo:  {
+Sat, 04 Jan 2025 00:46:07 GMT lit-js-sdk:constants:errors deprecated LitErrorKind is deprecated and will be removed in a future version. Use LIT_ERROR_KIND instead. at bundled_server.js:9:50
+Sat, 04 Jan 2025 00:46:07 GMT lit-js-sdk:constants:constants deprecated LitNetwork is deprecated and will be removed in a future version. Use LIT_NETWORK instead. at node:events:633:28
+Sat, 04 Jan 2025 00:46:07 GMT lit-js-sdk:constants:constants deprecated LogLevel is deprecated and will be removed in a future version. Use LOG_LEVEL instead. at node:events:633:28
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:07.719Z] [36m[DEBUG][0m [contract-sdk] Validator's URL: https://15.235.83.220:7470
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:07.720Z] [36m[DEBUG][0m [core] [_getValidatorData] epochInfo:  {
   epochLength: 300,
   number: 22504,
   endTime: 1730943027,
   retries: 0,
   timeout: 60
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.620Z] [36m[DEBUG][0m [core] [_getValidatorData] minNodeCount:  2
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.621Z] [36m[DEBUG][0m [core] [_getValidatorData] Bootstrap urls:  [
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:07.721Z] [36m[DEBUG][0m [core] [_getValidatorData] minNodeCount:  2
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:07.722Z] [36m[DEBUG][0m [core] [_getValidatorData] Bootstrap urls:  [
   'https://15.235.83.220:7470',
   'https://15.235.83.220:7472',
   'https://15.235.83.220:7471'
 ]
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.621Z] [36m[DEBUG][0m [core] [_getValidatorData] stakingContract:  0xD4507CD392Af2c80919219d7896508728f6A623F
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.622Z] [36m[DEBUG][0m [core] handshakeWithNode https://15.235.83.220:7470/web/handshake/
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.622Z] [36m[DEBUG][0m [core] [36m[id: 1ef3225ce536][0m sendCommandToNode with url https://15.235.83.220:7470/web/handshake/ and data {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:07.722Z] [36m[DEBUG][0m [core] [_getValidatorData] stakingContract:  0xD4507CD392Af2c80919219d7896508728f6A623F
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:07.722Z] [36m[DEBUG][0m [core] handshakeWithNode https://15.235.83.220:7470/web/handshake/
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:07.723Z] [36m[DEBUG][0m [core] [36m[id: 97957bce4678f][0m sendCommandToNode with url https://15.235.83.220:7470/web/handshake/ and data {
   clientPublicKey: 'test',
-  challenge: '5838da94491cb11b795a1f9424ff4df2d60f1efabd6169559d91317e11234873',
+  challenge: '910a71a10757034e683ce5aad4245c5da9d4505ac92c8925042e0764b4016e68',
   epoch: 22504
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.633Z] [36m[DEBUG][0m [core] handshakeWithNode https://15.235.83.220:7472/web/handshake/
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.633Z] [36m[DEBUG][0m [core] [36m[id: 1ef3225ce536][0m sendCommandToNode with url https://15.235.83.220:7472/web/handshake/ and data {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:07.736Z] [36m[DEBUG][0m [core] handshakeWithNode https://15.235.83.220:7472/web/handshake/
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:07.737Z] [36m[DEBUG][0m [core] [36m[id: 97957bce4678f][0m sendCommandToNode with url https://15.235.83.220:7472/web/handshake/ and data {
   clientPublicKey: 'test',
-  challenge: 'a5673b38e9262fd86720f5d654ca0961365958beabff2d34b3d89169391ed551',
+  challenge: '3d17d2c93eb2f304986925f48368874e1a31adea7ca2976f413f44635f521b88',
   epoch: 22504
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.634Z] [36m[DEBUG][0m [core] handshakeWithNode https://15.235.83.220:7471/web/handshake/
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.634Z] [36m[DEBUG][0m [core] [36m[id: 1ef3225ce536][0m sendCommandToNode with url https://15.235.83.220:7471/web/handshake/ and data {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:07.737Z] [36m[DEBUG][0m [core] handshakeWithNode https://15.235.83.220:7471/web/handshake/
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:07.737Z] [36m[DEBUG][0m [core] [36m[id: 97957bce4678f][0m sendCommandToNode with url https://15.235.83.220:7471/web/handshake/ and data {
   clientPublicKey: 'test',
-  challenge: '40873dd5738f737c4877e2d644acf751a7751d5aa3f089c513a8afb3248750a2',
+  challenge: '011ad5d8e0091f60a457ca17e2677d65dbe07ad6fbd9e6e0aa9a0186e242b07e',
   epoch: 22504
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.907Z] [36m[DEBUG][0m [core] Handshake with https://15.235.83.220:7472 returned keys:  {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:08.018Z] [36m[DEBUG][0m [core] Handshake with https://15.235.83.220:7472 returned keys:  {
   serverPubKey: '',
   subnetPubKey: '82b7ec4aac62a87aba55f6920862e021df37c445a075e72d87a64c3573aea67cfbb59a7be671e785fb3cb05d242cf2e6',
   networkPubKey: '82b7ec4aac62a87aba55f6920862e021df37c445a075e72d87a64c3573aea67cfbb59a7be671e785fb3cb05d242cf2e6',
@@ -51,9 +51,9 @@ Sat, 04 Jan 2025 00:33:57 GMT lit-js-sdk:constants:constants deprecated LogLevel
     '023e4f4020ea03b0631b02cbb595631e6bbbd563f1fe9f1cf953b29ea8a2d26a85',
     '0332914fa7b8ca6083139bb969650c26b092fe9990ef188daada9e4049bef58899'
   ],
-  latestBlockhash: '0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932'
+  latestBlockhash: '0x26639f3797d8af13bf10c24037a1d5834ae71236d27e6c1fc301d3959de7bd11'
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.910Z] [36m[DEBUG][0m [core] Handshake with https://15.235.83.220:7470 returned keys:  {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:08.020Z] [36m[DEBUG][0m [core] Handshake with https://15.235.83.220:7471 returned keys:  {
   serverPubKey: '',
   subnetPubKey: '82b7ec4aac62a87aba55f6920862e021df37c445a075e72d87a64c3573aea67cfbb59a7be671e785fb3cb05d242cf2e6',
   networkPubKey: '82b7ec4aac62a87aba55f6920862e021df37c445a075e72d87a64c3573aea67cfbb59a7be671e785fb3cb05d242cf2e6',
@@ -70,9 +70,9 @@ Sat, 04 Jan 2025 00:33:57 GMT lit-js-sdk:constants:constants deprecated LogLevel
     '023e4f4020ea03b0631b02cbb595631e6bbbd563f1fe9f1cf953b29ea8a2d26a85',
     '0332914fa7b8ca6083139bb969650c26b092fe9990ef188daada9e4049bef58899'
   ],
-  latestBlockhash: '0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932'
+  latestBlockhash: '0x26639f3797d8af13bf10c24037a1d5834ae71236d27e6c1fc301d3959de7bd11'
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.912Z] [36m[DEBUG][0m [core] Handshake with https://15.235.83.220:7471 returned keys:  {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:08.021Z] [36m[DEBUG][0m [core] Handshake with https://15.235.83.220:7470 returned keys:  {
   serverPubKey: '',
   subnetPubKey: '82b7ec4aac62a87aba55f6920862e021df37c445a075e72d87a64c3573aea67cfbb59a7be671e785fb3cb05d242cf2e6',
   networkPubKey: '82b7ec4aac62a87aba55f6920862e021df37c445a075e72d87a64c3573aea67cfbb59a7be671e785fb3cb05d242cf2e6',
@@ -89,11 +89,11 @@ Sat, 04 Jan 2025 00:33:57 GMT lit-js-sdk:constants:constants deprecated LogLevel
     '023e4f4020ea03b0631b02cbb595631e6bbbd563f1fe9f1cf953b29ea8a2d26a85',
     '0332914fa7b8ca6083139bb969650c26b092fe9990ef188daada9e4049bef58899'
   ],
-  latestBlockhash: '0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932'
+  latestBlockhash: '0x26639f3797d8af13bf10c24037a1d5834ae71236d27e6c1fc301d3959de7bd11'
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.912Z] [36m[DEBUG][0m [core] listening for state change on staking contract:  0xD4507CD392Af2c80919219d7896508728f6A623F
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.913Z] [36m[DEBUG][0m [core] 🔥 lit is ready. "litNodeClient" variable is ready to use globally.
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:33:57.913Z] [36m[DEBUG][0m [core] current network config {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:08.021Z] [36m[DEBUG][0m [core] listening for state change on staking contract:  0xD4507CD392Af2c80919219d7896508728f6A623F
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:08.022Z] [36m[DEBUG][0m [core] 🔥 lit is ready. "litNodeClient" variable is ready to use globally.
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:08.022Z] [36m[DEBUG][0m [core] current network config {
   networkPubkey: '82b7ec4aac62a87aba55f6920862e021df37c445a075e72d87a64c3573aea67cfbb59a7be671e785fb3cb05d242cf2e6',
   networkPubKeySet: '82b7ec4aac62a87aba55f6920862e021df37c445a075e72d87a64c3573aea67cfbb59a7be671e785fb3cb05d242cf2e6',
   hdRootPubkeys: [
@@ -109,121 +109,95 @@ Sat, 04 Jan 2025 00:33:57 GMT lit-js-sdk:constants:constants deprecated LogLevel
     '0332914fa7b8ca6083139bb969650c26b092fe9990ef188daada9e4049bef58899'
   ],
   subnetPubkey: '82b7ec4aac62a87aba55f6920862e021df37c445a075e72d87a64c3573aea67cfbb59a7be671e785fb3cb05d242cf2e6',
-  latestBlockhash: '0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932'
+  latestBlockhash: '0x26639f3797d8af13bf10c24037a1d5834ae71236d27e6c1fc301d3959de7bd11'
 }
 Server running at http://localhost:3092
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.037Z] [36m[DEBUG][0m [core] Blockhash is still valid. No need to sync.
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.037Z] [36m[DEBUG][0m [core] getWalletSig - flow starts
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.150Z] [36m[DEBUG][0m [core] Blockhash is still valid. No need to sync.
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.151Z] [36m[DEBUG][0m [core] getWalletSig - flow starts
         storageKey: lit-wallet-sig
-        storedWalletSigOrError: {"type":"SUCCESS","result":"{\"sig\":\"0x5f1e2328d21b89f4bc1e670820ada0bfbe70ab671f682852152cb71d2b45344b0ba6ee541354de82715a080a1003ac857b2b39a4b3f1ba04f40f70a6415aa3611c\",\"derivedVia\":\"web3.eth.personal.sign\",\"signedMessage\":\"localhost wants you to sign in with your Ethereum account:\\n0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d\\nVersion: 1\\nChain ID: 1\\nNonce: 0x8a97c51b75d60f6d408de9f8d65a55207eb4c613a0d0aea93b38a3d91f62f413\\nIssued At: 2025-01-04T00:12:11.391Z\\nExpiration Time: 2025-01-04T00:22:11.365Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119\",\"address\":\"0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\"}"}
+        storedWalletSigOrError: {"type":"SUCCESS","result":"{\"sig\":\"0x402a919f5243511b26374058978446a76e0770498be56a341801ae4962167c7318dffce9b7c0da31f20cf0be7af4e78a9743bd74d1d55a812640b9cb5effa56b1b\",\"derivedVia\":\"web3.eth.personal.sign\",\"signedMessage\":\"localhost wants you to sign in with your Ethereum account:\\n0xc9FB4835FEB7223759503e75b81dD8594b72c0E3\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c\\nVersion: 1\\nChain ID: 1\\nNonce: 0x66aa8bd338cdf8699ee147906f674936e4e4b64b0caa99272061cc199abf7414\\nIssued At: 2025-01-04T00:45:21.194Z\\nExpiration Time: 2025-01-04T00:55:21.154Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119\",\"address\":\"0xc9FB4835FEB7223759503e75b81dD8594b72c0E3\"}"}
     
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.038Z] [36m[DEBUG][0m [core] getWalletSig - flow 2
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.038Z] [36m[DEBUG][0m [core] getWalletSig - flow 2.1
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.038Z] [36m[DEBUG][0m [core] getWalletSig - flow 3
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.057Z] [36m[DEBUG][0m [core] Error while verifying BLS signature:  {
-  success: false,
-  data: SiweMessage {
-    scheme: undefined,
-    domain: 'localhost',
-    address: '0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c',
-    statement: "This is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.",
-    uri: 'lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d',
-    version: '1',
-    nonce: '0x8a97c51b75d60f6d408de9f8d65a55207eb4c613a0d0aea93b38a3d91f62f413',
-    issuedAt: '2025-01-04T00:12:11.391Z',
-    expirationTime: '2025-01-04T00:22:11.365Z',
-    notBefore: undefined,
-    requestId: undefined,
-    chainId: 1,
-    resources: [
-      'urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119'
-    ]
-  },
-  error: SiweError {
-    type: 'Expired message.',
-    expected: '2025-01-04T00:34:00.047Z < 2025-01-04T00:22:11.365Z',
-    received: '2025-01-04T00:34:00.047Z >= 2025-01-04T00:22:11.365Z'
-  }
-}
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.057Z] [36m[DEBUG][0m [core] need to re-sign session key. Signing...
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.112Z] [36m[DEBUG][0m [core] signatures: {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.151Z] [36m[DEBUG][0m [core] getWalletSig - flow 2
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.151Z] [36m[DEBUG][0m [core] getWalletSig - flow 2.1
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.151Z] [36m[DEBUG][0m [core] getWalletSig - flow 3
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.206Z] [36m[DEBUG][0m [core] signatures: {
   'https://15.235.83.220:7472': {
-    sig: '1e8588ad3986e7e7f88b93a83bd67d20bf01136586f2e981de905f01c047f2b0bf2fe30611189dc87c18221fc98214688cd104ef37befe277f581158cbd4f50d',
+    sig: '81c7c8ffbbbd51aff73324c819063b6e7a49c59491e53d61c90c103d5ea0b2108facaae80f6cd8d6f1f7662ac9fc4cf46a147bb09d1aff86bc0b6f28cf05f70e',
     derivedVia: 'litSessionSignViaNacl',
-    signedMessage: `{"sessionKey":"93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0xde6f3302bf635b6013de7eae94d45b4d0d6404fb7178d6e90cc8c46309c3a613088e951de92baf5e11b083d8cce8d107cf62d8e2f79aa2ed71352c758a32c4cf1c","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d\\nVersion: 1\\nChain ID: 1\\nNonce: 0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932\\nIssued At: 2025-01-04T00:34:00.059Z\\nExpiration Time: 2025-01-04T00:44:00.035Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c"}],"issuedAt":"2025-01-04T00:34:00.073Z","expiration":"2025-01-04T00:44:00.035Z","nodeAddress":"https://15.235.83.220:7472"}`,
-    address: '93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d',
-    algo: 'ed25519'
-  },
-  'https://15.235.83.220:7470': {
-    sig: '0810a4d60f40da371f25bce519a8dc4e25393b59e7aced6ea2d0c7dc8611479d1693cb17a68044d78be4d19d82caa439babb8f11980abb8bf2c96ef6bb798e03',
-    derivedVia: 'litSessionSignViaNacl',
-    signedMessage: `{"sessionKey":"93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0xde6f3302bf635b6013de7eae94d45b4d0d6404fb7178d6e90cc8c46309c3a613088e951de92baf5e11b083d8cce8d107cf62d8e2f79aa2ed71352c758a32c4cf1c","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d\\nVersion: 1\\nChain ID: 1\\nNonce: 0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932\\nIssued At: 2025-01-04T00:34:00.059Z\\nExpiration Time: 2025-01-04T00:44:00.035Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c"}],"issuedAt":"2025-01-04T00:34:00.073Z","expiration":"2025-01-04T00:44:00.035Z","nodeAddress":"https://15.235.83.220:7470"}`,
-    address: '93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d',
+    signedMessage: `{"sessionKey":"5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0x402a919f5243511b26374058978446a76e0770498be56a341801ae4962167c7318dffce9b7c0da31f20cf0be7af4e78a9743bd74d1d55a812640b9cb5effa56b1b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xc9FB4835FEB7223759503e75b81dD8594b72c0E3\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c\\nVersion: 1\\nChain ID: 1\\nNonce: 0x66aa8bd338cdf8699ee147906f674936e4e4b64b0caa99272061cc199abf7414\\nIssued At: 2025-01-04T00:45:21.194Z\\nExpiration Time: 2025-01-04T00:55:21.154Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0xc9FB4835FEB7223759503e75b81dD8594b72c0E3"}],"issuedAt":"2025-01-04T00:46:10.168Z","expiration":"2025-01-04T00:56:10.149Z","nodeAddress":"https://15.235.83.220:7472"}`,
+    address: '5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c',
     algo: 'ed25519'
   },
   'https://15.235.83.220:7471': {
-    sig: '1db0be2c9ef17795cd137a0a87355afff458bb6342648cc2f1d3855913aea262ce7fb3d451dde602e20feb9f428d7a7eff6e7206b5d74c65a3f8fd76eed5eb0a',
+    sig: '53fe7f20467e595989007076b71fbb2c293725bb65d545b17a459bc5e01bf3af8e2fb2dff763d3a96577d60908f7cf2bd9844d00f7dea1b5c712395378ceee0d',
     derivedVia: 'litSessionSignViaNacl',
-    signedMessage: `{"sessionKey":"93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0xde6f3302bf635b6013de7eae94d45b4d0d6404fb7178d6e90cc8c46309c3a613088e951de92baf5e11b083d8cce8d107cf62d8e2f79aa2ed71352c758a32c4cf1c","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d\\nVersion: 1\\nChain ID: 1\\nNonce: 0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932\\nIssued At: 2025-01-04T00:34:00.059Z\\nExpiration Time: 2025-01-04T00:44:00.035Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c"}],"issuedAt":"2025-01-04T00:34:00.073Z","expiration":"2025-01-04T00:44:00.035Z","nodeAddress":"https://15.235.83.220:7471"}`,
-    address: '93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d',
+    signedMessage: `{"sessionKey":"5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0x402a919f5243511b26374058978446a76e0770498be56a341801ae4962167c7318dffce9b7c0da31f20cf0be7af4e78a9743bd74d1d55a812640b9cb5effa56b1b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xc9FB4835FEB7223759503e75b81dD8594b72c0E3\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c\\nVersion: 1\\nChain ID: 1\\nNonce: 0x66aa8bd338cdf8699ee147906f674936e4e4b64b0caa99272061cc199abf7414\\nIssued At: 2025-01-04T00:45:21.194Z\\nExpiration Time: 2025-01-04T00:55:21.154Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0xc9FB4835FEB7223759503e75b81dD8594b72c0E3"}],"issuedAt":"2025-01-04T00:46:10.168Z","expiration":"2025-01-04T00:56:10.149Z","nodeAddress":"https://15.235.83.220:7471"}`,
+    address: '5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c',
+    algo: 'ed25519'
+  },
+  'https://15.235.83.220:7470': {
+    sig: '4b4a9c43ad759e8f8c14fc5d31acbf983f9c6fec1adddd280f5382987869c78458154d61820d3f3f11015de2067b2c34ba7932cc3a5b69ea5298f053c496c30d',
+    derivedVia: 'litSessionSignViaNacl',
+    signedMessage: `{"sessionKey":"5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0x402a919f5243511b26374058978446a76e0770498be56a341801ae4962167c7318dffce9b7c0da31f20cf0be7af4e78a9743bd74d1d55a812640b9cb5effa56b1b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xc9FB4835FEB7223759503e75b81dD8594b72c0E3\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c\\nVersion: 1\\nChain ID: 1\\nNonce: 0x66aa8bd338cdf8699ee147906f674936e4e4b64b0caa99272061cc199abf7414\\nIssued At: 2025-01-04T00:45:21.194Z\\nExpiration Time: 2025-01-04T00:55:21.154Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0xc9FB4835FEB7223759503e75b81dD8594b72c0E3"}],"issuedAt":"2025-01-04T00:46:10.168Z","expiration":"2025-01-04T00:56:10.149Z","nodeAddress":"https://15.235.83.220:7470"}`,
+    address: '5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c',
     algo: 'ed25519'
   }
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.113Z] [36m[DEBUG][0m [core] The request time is at: 2025-01-04T00:34:00.112Z
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.207Z] [36m[DEBUG][0m [core] The request time is at: 2025-01-04T00:46:10.207Z
 * Outer expiration:
-    * Issued at: 2025-01-04T00:34:00.073Z
-    * Expiration: 2025-01-04T00:44:00.035Z
-    * Duration: 9 minutes, 59.962 seconds
-    * Status: ✅ Not expired (valid for 9 minutes, 59.923 seconds)
+    * Issued at: 2025-01-04T00:46:10.168Z
+    * Expiration: 2025-01-04T00:56:10.149Z
+    * Duration: 9 minutes, 59.981 seconds
+    * Status: ✅ Not expired (valid for 9 minutes, 59.942 seconds)
 * Capabilities:
     * Capability 1 (web3.eth.personal.sign):
-        * Issued at: 2025-01-04T00:34:00.059Z
-        * Expiration: 2025-01-04T00:44:00.035Z
-        * Duration: 9 minutes, 59.976 seconds
-        * Status: ✅ Not expired (valid for 9 minutes, 59.923 seconds)
+        * Issued at: 2025-01-04T00:45:21.194Z
+        * Expiration: 2025-01-04T00:55:21.154Z
+        * Duration: 9 minutes, 59.960 seconds
+        * Status: ✅ Not expired (valid for 9 minutes, 10.947 seconds)
         * Attenuation:
             * lit-litaction://*
               * Threshold/Execution
             * lit-pkp://*
               * Threshold/Signing
 
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.113Z] [36m[DEBUG][0m [core] [36m[id: 0140f51499d0c][0m sendCommandToNode with url https://15.235.83.220:7472/web/execute/v1 and data {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.208Z] [36m[DEBUG][0m [core] [36m[id: 8ab6dc3431a96][0m sendCommandToNode with url https://15.235.83.220:7472/web/execute/v1 and data {
   code: 'CiAgICAgICAgKGFzeW5jICgpID0+IHsKICAgICAgICAgICAgY29uc29sZS5sb2coIlRoaXMgaXMgYSBsb2ciKTsKICAgICAgICAgICAgTGl0LkFjdGlvbnMuc2V0UmVzcG9uc2Uoe3Jlc3BvbnNlOiAiSGVsbG8sIFdvcmxkISJ9KTsKICAgICAgICB9KSgpCiAgICA=',
   jsParams: undefined,
   authSig: {
-    sig: '1e8588ad3986e7e7f88b93a83bd67d20bf01136586f2e981de905f01c047f2b0bf2fe30611189dc87c18221fc98214688cd104ef37befe277f581158cbd4f50d',
+    sig: '81c7c8ffbbbd51aff73324c819063b6e7a49c59491e53d61c90c103d5ea0b2108facaae80f6cd8d6f1f7662ac9fc4cf46a147bb09d1aff86bc0b6f28cf05f70e',
     derivedVia: 'litSessionSignViaNacl',
-    signedMessage: `{"sessionKey":"93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0xde6f3302bf635b6013de7eae94d45b4d0d6404fb7178d6e90cc8c46309c3a613088e951de92baf5e11b083d8cce8d107cf62d8e2f79aa2ed71352c758a32c4cf1c","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d\\nVersion: 1\\nChain ID: 1\\nNonce: 0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932\\nIssued At: 2025-01-04T00:34:00.059Z\\nExpiration Time: 2025-01-04T00:44:00.035Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c"}],"issuedAt":"2025-01-04T00:34:00.073Z","expiration":"2025-01-04T00:44:00.035Z","nodeAddress":"https://15.235.83.220:7472"}`,
-    address: '93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d',
+    signedMessage: `{"sessionKey":"5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0x402a919f5243511b26374058978446a76e0770498be56a341801ae4962167c7318dffce9b7c0da31f20cf0be7af4e78a9743bd74d1d55a812640b9cb5effa56b1b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xc9FB4835FEB7223759503e75b81dD8594b72c0E3\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c\\nVersion: 1\\nChain ID: 1\\nNonce: 0x66aa8bd338cdf8699ee147906f674936e4e4b64b0caa99272061cc199abf7414\\nIssued At: 2025-01-04T00:45:21.194Z\\nExpiration Time: 2025-01-04T00:55:21.154Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0xc9FB4835FEB7223759503e75b81dD8594b72c0E3"}],"issuedAt":"2025-01-04T00:46:10.168Z","expiration":"2025-01-04T00:56:10.149Z","nodeAddress":"https://15.235.83.220:7472"}`,
+    address: '5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c',
     algo: 'ed25519'
   },
   epoch: 22504
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.114Z] [36m[DEBUG][0m [core] [36m[id: 0140f51499d0c][0m sendCommandToNode with url https://15.235.83.220:7470/web/execute/v1 and data {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.209Z] [36m[DEBUG][0m [core] [36m[id: 8ab6dc3431a96][0m sendCommandToNode with url https://15.235.83.220:7471/web/execute/v1 and data {
   code: 'CiAgICAgICAgKGFzeW5jICgpID0+IHsKICAgICAgICAgICAgY29uc29sZS5sb2coIlRoaXMgaXMgYSBsb2ciKTsKICAgICAgICAgICAgTGl0LkFjdGlvbnMuc2V0UmVzcG9uc2Uoe3Jlc3BvbnNlOiAiSGVsbG8sIFdvcmxkISJ9KTsKICAgICAgICB9KSgpCiAgICA=',
   jsParams: undefined,
   authSig: {
-    sig: '0810a4d60f40da371f25bce519a8dc4e25393b59e7aced6ea2d0c7dc8611479d1693cb17a68044d78be4d19d82caa439babb8f11980abb8bf2c96ef6bb798e03',
+    sig: '53fe7f20467e595989007076b71fbb2c293725bb65d545b17a459bc5e01bf3af8e2fb2dff763d3a96577d60908f7cf2bd9844d00f7dea1b5c712395378ceee0d',
     derivedVia: 'litSessionSignViaNacl',
-    signedMessage: `{"sessionKey":"93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0xde6f3302bf635b6013de7eae94d45b4d0d6404fb7178d6e90cc8c46309c3a613088e951de92baf5e11b083d8cce8d107cf62d8e2f79aa2ed71352c758a32c4cf1c","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d\\nVersion: 1\\nChain ID: 1\\nNonce: 0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932\\nIssued At: 2025-01-04T00:34:00.059Z\\nExpiration Time: 2025-01-04T00:44:00.035Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c"}],"issuedAt":"2025-01-04T00:34:00.073Z","expiration":"2025-01-04T00:44:00.035Z","nodeAddress":"https://15.235.83.220:7470"}`,
-    address: '93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d',
+    signedMessage: `{"sessionKey":"5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0x402a919f5243511b26374058978446a76e0770498be56a341801ae4962167c7318dffce9b7c0da31f20cf0be7af4e78a9743bd74d1d55a812640b9cb5effa56b1b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xc9FB4835FEB7223759503e75b81dD8594b72c0E3\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c\\nVersion: 1\\nChain ID: 1\\nNonce: 0x66aa8bd338cdf8699ee147906f674936e4e4b64b0caa99272061cc199abf7414\\nIssued At: 2025-01-04T00:45:21.194Z\\nExpiration Time: 2025-01-04T00:55:21.154Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0xc9FB4835FEB7223759503e75b81dD8594b72c0E3"}],"issuedAt":"2025-01-04T00:46:10.168Z","expiration":"2025-01-04T00:56:10.149Z","nodeAddress":"https://15.235.83.220:7471"}`,
+    address: '5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c',
     algo: 'ed25519'
   },
   epoch: 22504
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.114Z] [36m[DEBUG][0m [core] [36m[id: 0140f51499d0c][0m sendCommandToNode with url https://15.235.83.220:7471/web/execute/v1 and data {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.209Z] [36m[DEBUG][0m [core] [36m[id: 8ab6dc3431a96][0m sendCommandToNode with url https://15.235.83.220:7470/web/execute/v1 and data {
   code: 'CiAgICAgICAgKGFzeW5jICgpID0+IHsKICAgICAgICAgICAgY29uc29sZS5sb2coIlRoaXMgaXMgYSBsb2ciKTsKICAgICAgICAgICAgTGl0LkFjdGlvbnMuc2V0UmVzcG9uc2Uoe3Jlc3BvbnNlOiAiSGVsbG8sIFdvcmxkISJ9KTsKICAgICAgICB9KSgpCiAgICA=',
   jsParams: undefined,
   authSig: {
-    sig: '1db0be2c9ef17795cd137a0a87355afff458bb6342648cc2f1d3855913aea262ce7fb3d451dde602e20feb9f428d7a7eff6e7206b5d74c65a3f8fd76eed5eb0a',
+    sig: '4b4a9c43ad759e8f8c14fc5d31acbf983f9c6fec1adddd280f5382987869c78458154d61820d3f3f11015de2067b2c34ba7932cc3a5b69ea5298f053c496c30d',
     derivedVia: 'litSessionSignViaNacl',
-    signedMessage: `{"sessionKey":"93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0xde6f3302bf635b6013de7eae94d45b4d0d6404fb7178d6e90cc8c46309c3a613088e951de92baf5e11b083d8cce8d107cf62d8e2f79aa2ed71352c758a32c4cf1c","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d\\nVersion: 1\\nChain ID: 1\\nNonce: 0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932\\nIssued At: 2025-01-04T00:34:00.059Z\\nExpiration Time: 2025-01-04T00:44:00.035Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c"}],"issuedAt":"2025-01-04T00:34:00.073Z","expiration":"2025-01-04T00:44:00.035Z","nodeAddress":"https://15.235.83.220:7471"}`,
-    address: '93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d',
+    signedMessage: `{"sessionKey":"5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0x402a919f5243511b26374058978446a76e0770498be56a341801ae4962167c7318dffce9b7c0da31f20cf0be7af4e78a9743bd74d1d55a812640b9cb5effa56b1b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xc9FB4835FEB7223759503e75b81dD8594b72c0E3\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c\\nVersion: 1\\nChain ID: 1\\nNonce: 0x66aa8bd338cdf8699ee147906f674936e4e4b64b0caa99272061cc199abf7414\\nIssued At: 2025-01-04T00:45:21.194Z\\nExpiration Time: 2025-01-04T00:55:21.154Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0xc9FB4835FEB7223759503e75b81dD8594b72c0E3"}],"issuedAt":"2025-01-04T00:46:10.168Z","expiration":"2025-01-04T00:56:10.149Z","nodeAddress":"https://15.235.83.220:7470"}`,
+    address: '5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c',
     algo: 'ed25519'
   },
   epoch: 22504
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.287Z] [36m[DEBUG][0m [core] [36m[id: 0140f51499d0c][0m executeJs responseData from node :  [
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.381Z] [36m[DEBUG][0m [core] [36m[id: 8ab6dc3431a96][0m executeJs responseData from node :  [
   {
     "success": true,
     "signedData": {},
@@ -249,14 +223,14 @@ Server running at http://localhost:3092
     "logs": "This is a log\n"
   }
 ]
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.288Z] [36m[DEBUG][0m [core] strategy found to be most common, taking most common response from execution results
-Sat, 04 Jan 2025 00:34:00 GMT lit-js-sdk:constants:constants deprecated LitNetwork is deprecated and will be removed in a future version. Use LIT_NETWORK instead. at bundled_server.js:17800:19
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.294Z] [36m[DEBUG][0m [contract-sdk] ----- We're in node! -----
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.295Z] [36m[DEBUG][0m [contract-sdk] Your Signer: Wallet2 {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.381Z] [36m[DEBUG][0m [core] strategy found to be most common, taking most common response from execution results
+Sat, 04 Jan 2025 00:46:10 GMT lit-js-sdk:constants:constants deprecated LitNetwork is deprecated and will be removed in a future version. Use LIT_NETWORK instead. at bundled_server.js:17800:19
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.387Z] [36m[DEBUG][0m [contract-sdk] ----- We're in node! -----
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.387Z] [36m[DEBUG][0m [contract-sdk] Your Signer: Wallet2 {
   _isSigner: true,
   _signingKey: [Function (anonymous)],
   _mnemonic: [Function (anonymous)],
-  address: '0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c',
+  address: '0xc9FB4835FEB7223759503e75b81dD8594b72c0E3',
   provider: JsonRpcProvider2 {
     _isProvider: true,
     _events: [],
@@ -276,11 +250,11 @@ Sat, 04 Jan 2025 00:34:00 GMT lit-js-sdk:constants:constants deprecated LitNetwo
     _network: { chainId: 175188, name: 'unknown' }
   }
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.295Z] [36m[DEBUG][0m [contract-sdk] Your Provider: {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.387Z] [36m[DEBUG][0m [contract-sdk] Your Provider: {
   url: 'https://yellowstone-rpc.litprotocol.com',
   skipFetchSetup: true
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:00.295Z] [36m[DEBUG][0m [contract-sdk] resolved contract addresses for:  datil-dev {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:10.387Z] [36m[DEBUG][0m [contract-sdk] resolved contract addresses for:  datil-dev {
   StakingBalances: '0x77F277D4858Ae589b2263FEfd50CaD7838fE4741',
   Staking: '0xD4507CD392Af2c80919219d7896508728f6A623F',
   Multisender: '0x116eBFb474C6aa13e1B8b19253fd0E3f226A982f',
@@ -293,100 +267,96 @@ Sat, 04 Jan 2025 00:34:00 GMT lit-js-sdk:constants:constants deprecated LitNetwo
   PKPNFTMetadata: '0x784A743bBBB5f5225CeC7979A3304179be17D66d',
   Allowlist: '0xC60051658E346554C1F572ef3Aa4bD8596E026b6'
 }
-Sat, 04 Jan 2025 00:34:00 GMT lit-js-sdk:constants:constants deprecated AuthMethodType is deprecated and will be removed in a future version. Use AUTH_METHOD_TYPE instead. at node:internal/process/task_queues:95:5
-Sat, 04 Jan 2025 00:34:00 GMT lit-js-sdk:constants:constants deprecated AuthMethodScope is deprecated and will be removed in a future version. Use AUTH_METHOD_SCOPE instead. at node:internal/process/task_queues:95:5
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.040Z] [36m[DEBUG][0m [contract-sdk] tokenId: 0xfb06184331b3d03c92d967fb345efe19fce5836e15f41c2a6165d6fa8013a6ea
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.081Z] [36m[DEBUG][0m [contract-sdk] pkp pub key:  0x04805555358be98ed8f2535d8148e4626a0170feb9ead6280eaf31bf1fce6cefd51a3eccbc51fb30a5f1be25cc52f8119af9c3c08f108c259ccdc2d5b2d0875b39
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.094Z] [36m[DEBUG][0m [core] getWalletSig - flow starts
-        storageKey: lit-wallet-sig
-        storedWalletSigOrError: {"type":"SUCCESS","result":"{\"sig\":\"0xde6f3302bf635b6013de7eae94d45b4d0d6404fb7178d6e90cc8c46309c3a613088e951de92baf5e11b083d8cce8d107cf62d8e2f79aa2ed71352c758a32c4cf1c\",\"derivedVia\":\"web3.eth.personal.sign\",\"signedMessage\":\"localhost wants you to sign in with your Ethereum account:\\n0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d\\nVersion: 1\\nChain ID: 1\\nNonce: 0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932\\nIssued At: 2025-01-04T00:34:00.059Z\\nExpiration Time: 2025-01-04T00:44:00.035Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119\",\"address\":\"0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\"}"}
-    
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.133Z] [36m[DEBUG][0m [core] The request time is at: 2025-01-04T00:34:01.133Z
+Sat, 04 Jan 2025 00:46:10 GMT lit-js-sdk:constants:constants deprecated AuthMethodType is deprecated and will be removed in a future version. Use AUTH_METHOD_TYPE instead. at node:internal/process/task_queues:95:5
+Sat, 04 Jan 2025 00:46:10 GMT lit-js-sdk:constants:constants deprecated AuthMethodScope is deprecated and will be removed in a future version. Use AUTH_METHOD_SCOPE instead. at node:internal/process/task_queues:95:5
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.114Z] [36m[DEBUG][0m [contract-sdk] tokenId: 0x268c5e088a068247cb860456cfe4c6c6f2f60883d1bd5a0fb7c394a249d78016
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.160Z] [36m[DEBUG][0m [contract-sdk] pkp pub key:  0x0486c5cedcaae1718656f4abc44aec4af907aec17135d949c4c2a51c3935f0506733918bdf178530cee3178ffb85244d90110654df41b6e9421b8023602d2ca68a
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.211Z] [36m[DEBUG][0m [core] The request time is at: 2025-01-04T00:46:11.211Z
 * Outer expiration:
-    * Issued at: 2025-01-04T00:34:01.102Z
-    * Expiration: 2025-01-04T00:44:01.093Z
-    * Duration: 9 minutes, 59.991 seconds
-    * Status: ✅ Not expired (valid for 9 minutes, 59.960 seconds)
+    * Issued at: 2025-01-04T00:46:11.183Z
+    * Expiration: 2025-01-04T00:56:11.175Z
+    * Duration: 9 minutes, 59.992 seconds
+    * Status: ✅ Not expired (valid for 9 minutes, 59.964 seconds)
 * Capabilities:
     * Capability 1 (web3.eth.personal.sign):
-        * Issued at: 2025-01-04T00:34:00.059Z
-        * Expiration: 2025-01-04T00:44:00.035Z
-        * Duration: 9 minutes, 59.976 seconds
-        * Status: ✅ Not expired (valid for 9 minutes, 58.902 seconds)
+        * Issued at: 2025-01-04T00:45:21.194Z
+        * Expiration: 2025-01-04T00:55:21.154Z
+        * Duration: 9 minutes, 59.960 seconds
+        * Status: ✅ Not expired (valid for 9 minutes, 9.943 seconds)
         * Attenuation:
             * lit-litaction://*
               * Threshold/Execution
             * lit-pkp://*
               * Threshold/Signing
 
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.133Z] [36m[DEBUG][0m [core] [36m[id: 6ccf3a9edd6a1][0m reqBody: {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.212Z] [36m[DEBUG][0m [core] [36m[id: 825945d17eadf][0m reqBody: {
   toSign: [
     173, 178,   4,  32, 189, 232, 205, 166,
     119,  18,  73,  24, 136,  23,   9, 143,
     202, 140, 207, 142, 239,  33,  32, 163,
      30,  63, 100, 245, 129,  32,  38, 191
   ],
-  pubkey: '0x04805555358be98ed8f2535d8148e4626a0170feb9ead6280eaf31bf1fce6cefd51a3eccbc51fb30a5f1be25cc52f8119af9c3c08f108c259ccdc2d5b2d0875b39',
+  pubkey: '0x0486c5cedcaae1718656f4abc44aec4af907aec17135d949c4c2a51c3935f0506733918bdf178530cee3178ffb85244d90110654df41b6e9421b8023602d2ca68a',
   authSig: {
-    sig: '78f01bde486f45b341c1dff15c4d12389e504233ca63a1f6e8b2ea0194465e0013fca0444e92222f0f9323aea4daf87f7834c943a78fd9c8801bde415b81680d',
+    sig: 'aa985f8161957049cc6bf6bea9135a871259740deebf6a747ca61c6014bf9afa49c0ba5f18587796de101de20aebf866bc53396605cbe14e953607fa9a1cd20b',
     derivedVia: 'litSessionSignViaNacl',
-    signedMessage: `{"sessionKey":"93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0xde6f3302bf635b6013de7eae94d45b4d0d6404fb7178d6e90cc8c46309c3a613088e951de92baf5e11b083d8cce8d107cf62d8e2f79aa2ed71352c758a32c4cf1c","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d\\nVersion: 1\\nChain ID: 1\\nNonce: 0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932\\nIssued At: 2025-01-04T00:34:00.059Z\\nExpiration Time: 2025-01-04T00:44:00.035Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c"}],"issuedAt":"2025-01-04T00:34:01.102Z","expiration":"2025-01-04T00:44:01.093Z","nodeAddress":"https://15.235.83.220:7472"}`,
-    address: '93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d',
+    signedMessage: `{"sessionKey":"5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0x402a919f5243511b26374058978446a76e0770498be56a341801ae4962167c7318dffce9b7c0da31f20cf0be7af4e78a9743bd74d1d55a812640b9cb5effa56b1b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xc9FB4835FEB7223759503e75b81dD8594b72c0E3\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c\\nVersion: 1\\nChain ID: 1\\nNonce: 0x66aa8bd338cdf8699ee147906f674936e4e4b64b0caa99272061cc199abf7414\\nIssued At: 2025-01-04T00:45:21.194Z\\nExpiration Time: 2025-01-04T00:55:21.154Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0xc9FB4835FEB7223759503e75b81dD8594b72c0E3"}],"issuedAt":"2025-01-04T00:46:11.183Z","expiration":"2025-01-04T00:56:11.175Z","nodeAddress":"https://15.235.83.220:7472"}`,
+    address: '5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c',
     algo: 'ed25519'
   }
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.133Z] [36m[DEBUG][0m [core] [36m[id: 6ccf3a9edd6a1][0m sendCommandToNode with url https://15.235.83.220:7472/web/pkp/sign/v1 and data {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.212Z] [36m[DEBUG][0m [core] [36m[id: 825945d17eadf][0m sendCommandToNode with url https://15.235.83.220:7472/web/pkp/sign/v1 and data {
   toSign: [
     173, 178,   4,  32, 189, 232, 205, 166,
     119,  18,  73,  24, 136,  23,   9, 143,
     202, 140, 207, 142, 239,  33,  32, 163,
      30,  63, 100, 245, 129,  32,  38, 191
   ],
-  pubkey: '0x04805555358be98ed8f2535d8148e4626a0170feb9ead6280eaf31bf1fce6cefd51a3eccbc51fb30a5f1be25cc52f8119af9c3c08f108c259ccdc2d5b2d0875b39',
+  pubkey: '0x0486c5cedcaae1718656f4abc44aec4af907aec17135d949c4c2a51c3935f0506733918bdf178530cee3178ffb85244d90110654df41b6e9421b8023602d2ca68a',
   authSig: {
-    sig: '78f01bde486f45b341c1dff15c4d12389e504233ca63a1f6e8b2ea0194465e0013fca0444e92222f0f9323aea4daf87f7834c943a78fd9c8801bde415b81680d',
+    sig: 'aa985f8161957049cc6bf6bea9135a871259740deebf6a747ca61c6014bf9afa49c0ba5f18587796de101de20aebf866bc53396605cbe14e953607fa9a1cd20b',
     derivedVia: 'litSessionSignViaNacl',
-    signedMessage: `{"sessionKey":"93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0xde6f3302bf635b6013de7eae94d45b4d0d6404fb7178d6e90cc8c46309c3a613088e951de92baf5e11b083d8cce8d107cf62d8e2f79aa2ed71352c758a32c4cf1c","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d\\nVersion: 1\\nChain ID: 1\\nNonce: 0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932\\nIssued At: 2025-01-04T00:34:00.059Z\\nExpiration Time: 2025-01-04T00:44:00.035Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c"}],"issuedAt":"2025-01-04T00:34:01.102Z","expiration":"2025-01-04T00:44:01.093Z","nodeAddress":"https://15.235.83.220:7472"}`,
-    address: '93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d',
+    signedMessage: `{"sessionKey":"5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0x402a919f5243511b26374058978446a76e0770498be56a341801ae4962167c7318dffce9b7c0da31f20cf0be7af4e78a9743bd74d1d55a812640b9cb5effa56b1b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xc9FB4835FEB7223759503e75b81dD8594b72c0E3\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c\\nVersion: 1\\nChain ID: 1\\nNonce: 0x66aa8bd338cdf8699ee147906f674936e4e4b64b0caa99272061cc199abf7414\\nIssued At: 2025-01-04T00:45:21.194Z\\nExpiration Time: 2025-01-04T00:55:21.154Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0xc9FB4835FEB7223759503e75b81dD8594b72c0E3"}],"issuedAt":"2025-01-04T00:46:11.183Z","expiration":"2025-01-04T00:56:11.175Z","nodeAddress":"https://15.235.83.220:7472"}`,
+    address: '5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c',
     algo: 'ed25519'
   },
   epoch: 22504
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.134Z] [36m[DEBUG][0m [core] [36m[id: 6ccf3a9edd6a1][0m sendCommandToNode with url https://15.235.83.220:7470/web/pkp/sign/v1 and data {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.212Z] [36m[DEBUG][0m [core] [36m[id: 825945d17eadf][0m sendCommandToNode with url https://15.235.83.220:7471/web/pkp/sign/v1 and data {
   toSign: [
     173, 178,   4,  32, 189, 232, 205, 166,
     119,  18,  73,  24, 136,  23,   9, 143,
     202, 140, 207, 142, 239,  33,  32, 163,
      30,  63, 100, 245, 129,  32,  38, 191
   ],
-  pubkey: '0x04805555358be98ed8f2535d8148e4626a0170feb9ead6280eaf31bf1fce6cefd51a3eccbc51fb30a5f1be25cc52f8119af9c3c08f108c259ccdc2d5b2d0875b39',
+  pubkey: '0x0486c5cedcaae1718656f4abc44aec4af907aec17135d949c4c2a51c3935f0506733918bdf178530cee3178ffb85244d90110654df41b6e9421b8023602d2ca68a',
   authSig: {
-    sig: '660490c2ff581e05d00e1774d85b75ef9bdadd25d9c91ef1c4ef38938b7f8ef5d32dcf500cfb29a06e6a9e9e1fae4207100637acb6db08bb8e43822b7744b80a',
+    sig: '67cb44d3d387bfb3c05bcbb16aa9684b77ac2094a49f7a587a80db6906c8f8bdd965f9199d8e25c6b1b36d4ead17384bc0e9a1164134d65d6bfa2df1335cb705',
     derivedVia: 'litSessionSignViaNacl',
-    signedMessage: `{"sessionKey":"93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0xde6f3302bf635b6013de7eae94d45b4d0d6404fb7178d6e90cc8c46309c3a613088e951de92baf5e11b083d8cce8d107cf62d8e2f79aa2ed71352c758a32c4cf1c","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d\\nVersion: 1\\nChain ID: 1\\nNonce: 0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932\\nIssued At: 2025-01-04T00:34:00.059Z\\nExpiration Time: 2025-01-04T00:44:00.035Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c"}],"issuedAt":"2025-01-04T00:34:01.102Z","expiration":"2025-01-04T00:44:01.093Z","nodeAddress":"https://15.235.83.220:7470"}`,
-    address: '93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d',
+    signedMessage: `{"sessionKey":"5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0x402a919f5243511b26374058978446a76e0770498be56a341801ae4962167c7318dffce9b7c0da31f20cf0be7af4e78a9743bd74d1d55a812640b9cb5effa56b1b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xc9FB4835FEB7223759503e75b81dD8594b72c0E3\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c\\nVersion: 1\\nChain ID: 1\\nNonce: 0x66aa8bd338cdf8699ee147906f674936e4e4b64b0caa99272061cc199abf7414\\nIssued At: 2025-01-04T00:45:21.194Z\\nExpiration Time: 2025-01-04T00:55:21.154Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0xc9FB4835FEB7223759503e75b81dD8594b72c0E3"}],"issuedAt":"2025-01-04T00:46:11.183Z","expiration":"2025-01-04T00:56:11.175Z","nodeAddress":"https://15.235.83.220:7471"}`,
+    address: '5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c',
     algo: 'ed25519'
   },
   epoch: 22504
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.134Z] [36m[DEBUG][0m [core] [36m[id: 6ccf3a9edd6a1][0m sendCommandToNode with url https://15.235.83.220:7471/web/pkp/sign/v1 and data {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.213Z] [36m[DEBUG][0m [core] [36m[id: 825945d17eadf][0m sendCommandToNode with url https://15.235.83.220:7470/web/pkp/sign/v1 and data {
   toSign: [
     173, 178,   4,  32, 189, 232, 205, 166,
     119,  18,  73,  24, 136,  23,   9, 143,
     202, 140, 207, 142, 239,  33,  32, 163,
      30,  63, 100, 245, 129,  32,  38, 191
   ],
-  pubkey: '0x04805555358be98ed8f2535d8148e4626a0170feb9ead6280eaf31bf1fce6cefd51a3eccbc51fb30a5f1be25cc52f8119af9c3c08f108c259ccdc2d5b2d0875b39',
+  pubkey: '0x0486c5cedcaae1718656f4abc44aec4af907aec17135d949c4c2a51c3935f0506733918bdf178530cee3178ffb85244d90110654df41b6e9421b8023602d2ca68a',
   authSig: {
-    sig: '921b464a52cd645b91831d7e588a81af1d88705328fcb5cf11fe4cfee2c417fcbbdfb7f9c5a051bc8b7e4d282d878ee7d9751f2f7587b1fcb99f5c340f870b00',
+    sig: '0d2bb03093f4719a6bb7f234e6e1116265bbc88421f79732e095d5eecbe72640e9d42875c2f73d96472e0373ae89eca1f38003d9bf5a1acb97ae76c74f90ee01',
     derivedVia: 'litSessionSignViaNacl',
-    signedMessage: `{"sessionKey":"93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0xde6f3302bf635b6013de7eae94d45b4d0d6404fb7178d6e90cc8c46309c3a613088e951de92baf5e11b083d8cce8d107cf62d8e2f79aa2ed71352c758a32c4cf1c","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d\\nVersion: 1\\nChain ID: 1\\nNonce: 0xe7db9b3e4f4b1dfcf550b52352a9a1abdc147aff19bf1d878b031a98613e3932\\nIssued At: 2025-01-04T00:34:00.059Z\\nExpiration Time: 2025-01-04T00:44:00.035Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0x046BF7BB88E0e0941358CE3F5A765C9acddA7B9c"}],"issuedAt":"2025-01-04T00:34:01.102Z","expiration":"2025-01-04T00:44:01.093Z","nodeAddress":"https://15.235.83.220:7471"}`,
-    address: '93b394e6b4f0d02187e775479aab5a3609c6f32855637a92ac2989cedf82a46d',
+    signedMessage: `{"sessionKey":"5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c","resourceAbilityRequests":[{"resource":{"resource":"*","resourcePrefix":"lit-litaction"},"ability":"lit-action-execution"},{"resource":{"resource":"*","resourcePrefix":"lit-pkp"},"ability":"pkp-signing"}],"capabilities":[{"sig":"0x402a919f5243511b26374058978446a76e0770498be56a341801ae4962167c7318dffce9b7c0da31f20cf0be7af4e78a9743bd74d1d55a812640b9cb5effa56b1b","derivedVia":"web3.eth.personal.sign","signedMessage":"localhost wants you to sign in with your Ethereum account:\\n0xc9FB4835FEB7223759503e75b81dD8594b72c0E3\\n\\nThis is a test statement.  You can put anything you want here. I further authorize the stated URI to perform the following actions on my behalf: (1) 'Threshold': 'Execution' for 'lit-litaction://*'. (2) 'Threshold': 'Signing' for 'lit-pkp://*'.\\n\\nURI: lit:session:5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c\\nVersion: 1\\nChain ID: 1\\nNonce: 0x66aa8bd338cdf8699ee147906f674936e4e4b64b0caa99272061cc199abf7414\\nIssued At: 2025-01-04T00:45:21.194Z\\nExpiration Time: 2025-01-04T00:55:21.154Z\\nResources:\\n- urn:recap:eyJhdHQiOnsibGl0LWxpdGFjdGlvbjovLyoiOnsiVGhyZXNob2xkL0V4ZWN1dGlvbiI6W3t9XX0sImxpdC1wa3A6Ly8qIjp7IlRocmVzaG9sZC9TaWduaW5nIjpbe31dfX0sInByZiI6W119","address":"0xc9FB4835FEB7223759503e75b81dD8594b72c0E3"}],"issuedAt":"2025-01-04T00:46:11.183Z","expiration":"2025-01-04T00:56:11.175Z","nodeAddress":"https://15.235.83.220:7470"}`,
+    address: '5781c6c0c39a494855c9b35d183cba9ac9c2b6c37366f99d1a0b2f80d7a8485c',
     algo: 'ed25519'
   },
   epoch: 22504
 }
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.691Z] [36m[DEBUG][0m [core] [36m[id: 6ccf3a9edd6a1][0m responseData [
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.964Z] [36m[DEBUG][0m [core] [36m[id: 825945d17eadf][0m responseData [
   {
     "success": true,
     "signedData": [
@@ -473,9 +443,9 @@ Sat, 04 Jan 2025 00:34:00 GMT lit-js-sdk:constants:constants deprecated AuthMeth
       "digest": "\"ADB20420BDE8CDA6771249188817098FCA8CCF8EEF2120A31E3F64F5812026BF\"",
       "result": "success",
       "share_index": 0,
-      "signature_share": "\"AC16197E14253DDC089BC574633DD80F0D9CC635F6A75AE204308F83DC052C83\"",
-      "big_r": "\"02053081148E29BEA8CD6A3E03171C06FE1E25DE2F58783F8DE87BAE413DE690A7\"",
-      "public_key": "\"04805555358BE98ED8F2535D8148E4626A0170FEB9EAD6280EAF31BF1FCE6CEFD51A3ECCBC51FB30A5F1BE25CC52F8119AF9C3C08F108C259CCDC2D5B2D0875B39\"",
+      "signature_share": "\"CA9E5C4C048456243E8756353ABB99EEBAF9AE3018D7B0C18DD018370812EF56\"",
+      "big_r": "\"02F2C75AF8139A941AFFF095E2084906A6BDC3861CBEC961C1D3B91C3092EB949C\"",
+      "public_key": "\"0486C5CEDCAAE1718656F4ABC44AEC4AF907AEC17135D949C4C2A51C3935F0506733918BDF178530CEE3178FFB85244D90110654DF41B6E9421B8023602D2CA68A\"",
       "sig_type": "K256"
     }
   },
@@ -519,45 +489,45 @@ Sat, 04 Jan 2025 00:34:00 GMT lit-js-sdk:constants:constants deprecated AuthMeth
       "digest": "\"ADB20420BDE8CDA6771249188817098FCA8CCF8EEF2120A31E3F64F5812026BF\"",
       "result": "success",
       "share_index": 0,
-      "signature_share": "\"FF2D8B5645A23BE7B455A3CC4C3133865798A93D1C3EF22C50203CA044379246\"",
-      "big_r": "\"02053081148E29BEA8CD6A3E03171C06FE1E25DE2F58783F8DE87BAE413DE690A7\"",
-      "public_key": "\"04805555358BE98ED8F2535D8148E4626A0170FEB9EAD6280EAF31BF1FCE6CEFD51A3ECCBC51FB30A5F1BE25CC52F8119AF9C3C08F108C259CCDC2D5B2D0875B39\"",
+      "signature_share": "\"85F83FC3DA0C9F21F6004E0457BD6315DA0C49A586C58364D8070CE8F5A4FFBA\"",
+      "big_r": "\"02F2C75AF8139A941AFFF095E2084906A6BDC3861CBEC961C1D3B91C3092EB949C\"",
+      "public_key": "\"0486C5CEDCAAE1718656F4ABC44AEC4AF907AEC17135D949C4C2A51C3935F0506733918BDF178530CEE3178FFB85244D90110654DF41B6E9421B8023602D2CA68A\"",
       "sig_type": "K256"
     }
   }
 ]
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.691Z] [36m[DEBUG][0m [core] [36m[id: 6ccf3a9edd6a1][0m invalid field signatureShare in signature share: signature, continuing with share processing
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.692Z] [36m[DEBUG][0m [core] [36m[id: 6ccf3a9edd6a1][0m starting signature combine for sig name: sig [
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.965Z] [36m[DEBUG][0m [core] [36m[id: 825945d17eadf][0m invalid field signatureShare in signature share: signature, continuing with share processing
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.966Z] [36m[DEBUG][0m [core] [36m[id: 825945d17eadf][0m starting signature combine for sig name: sig [
   {
     sigType: 'K256',
-    signatureShare: 'AC16197E14253DDC089BC574633DD80F0D9CC635F6A75AE204308F83DC052C83',
+    signatureShare: 'CA9E5C4C048456243E8756353ABB99EEBAF9AE3018D7B0C18DD018370812EF56',
     shareIndex: 0,
-    bigR: '02053081148E29BEA8CD6A3E03171C06FE1E25DE2F58783F8DE87BAE413DE690A7',
-    publicKey: '04805555358BE98ED8F2535D8148E4626A0170FEB9EAD6280EAF31BF1FCE6CEFD51A3ECCBC51FB30A5F1BE25CC52F8119AF9C3C08F108C259CCDC2D5B2D0875B39',
+    bigR: '02F2C75AF8139A941AFFF095E2084906A6BDC3861CBEC961C1D3B91C3092EB949C',
+    publicKey: '0486C5CEDCAAE1718656F4ABC44AEC4AF907AEC17135D949C4C2A51C3935F0506733918BDF178530CEE3178FFB85244D90110654DF41B6E9421B8023602D2CA68A',
     dataSigned: 'ADB20420BDE8CDA6771249188817098FCA8CCF8EEF2120A31E3F64F5812026BF',
     sigName: 'sig'
   },
   {
     sigType: 'K256',
-    signatureShare: 'FF2D8B5645A23BE7B455A3CC4C3133865798A93D1C3EF22C50203CA044379246',
+    signatureShare: '85F83FC3DA0C9F21F6004E0457BD6315DA0C49A586C58364D8070CE8F5A4FFBA',
     shareIndex: 0,
-    bigR: '02053081148E29BEA8CD6A3E03171C06FE1E25DE2F58783F8DE87BAE413DE690A7',
-    publicKey: '04805555358BE98ED8F2535D8148E4626A0170FEB9EAD6280EAF31BF1FCE6CEFD51A3ECCBC51FB30A5F1BE25CC52F8119AF9C3C08F108C259CCDC2D5B2D0875B39',
+    bigR: '02F2C75AF8139A941AFFF095E2084906A6BDC3861CBEC961C1D3B91C3092EB949C',
+    publicKey: '0486C5CEDCAAE1718656F4ABC44AEC4AF907AEC17135D949C4C2A51C3935F0506733918BDF178530CEE3178FFB85244D90110654DF41B6E9421B8023602D2CA68A',
     dataSigned: 'ADB20420BDE8CDA6771249188817098FCA8CCF8EEF2120A31E3F64F5812026BF',
     sigName: 'sig'
   }
 ]
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.692Z] [36m[DEBUG][0m [core] [36m[id: 6ccf3a9edd6a1][0m number of shares for sig: 3
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.692Z] [36m[DEBUG][0m [core] [36m[id: 6ccf3a9edd6a1][0m validated length for signature: sig 2
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.692Z] [36m[DEBUG][0m [core] [36m[id: 6ccf3a9edd6a1][0m minimum required shares for threshold: 2
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.966Z] [36m[DEBUG][0m [core] [36m[id: 825945d17eadf][0m number of shares for sig: 3
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.966Z] [36m[DEBUG][0m [core] [36m[id: 825945d17eadf][0m validated length for signature: sig 2
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.966Z] [36m[DEBUG][0m [core] [36m[id: 825945d17eadf][0m minimum required shares for threshold: 2
 using deprecated parameters for `initSync()`; pass a single object instead
-[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:34:01.716Z] [36m[DEBUG][0m [core] [36m[id: 6ccf3a9edd6a1][0m signature combination {
+[Lit-JS-SDK v7.0.1-alpha-0] [2025-01-04T00:46:11.999Z] [36m[DEBUG][0m [core] [36m[id: 825945d17eadf][0m signature combination {
   signature: {
-    r: '053081148e29bea8cd6a3e03171c06fe1e25de2f58783f8de87bae413de690a7',
-    s: '54bc5b2ba638863c430e96bf5090f46810284a5a4baaf3692b53f0f5802fc3b9',
+    r: 'f2c75af8139a941afff095e2084906a6bdc3861cbec961c1d3b91c3092eb949c',
+    s: '50969c0fde90f5463487a4399278fd05da571aeef05493eaa604c6932d81adcf',
     recid: 0,
-    signature: '0x053081148e29bea8cd6a3e03171c06fe1e25de2f58783f8de87bae413de690a754bc5b2ba638863c430e96bf5090f46810284a5a4baaf3692b53f0f5802fc3b91b',
-    publicKey: '04805555358BE98ED8F2535D8148E4626A0170FEB9EAD6280EAF31BF1FCE6CEFD51A3ECCBC51FB30A5F1BE25CC52F8119AF9C3C08F108C259CCDC2D5B2D0875B39',
+    signature: '0xf2c75af8139a941afff095e2084906a6bdc3861cbec961c1d3b91c3092eb949c50969c0fde90f5463487a4399278fd05da571aeef05493eaa604c6932d81adcf1b',
+    publicKey: '0486C5CEDCAAE1718656F4ABC44AEC4AF907AEC17135D949C4C2A51C3935F0506733918BDF178530CEE3178FFB85244D90110654DF41B6E9421B8023602D2CA68A',
     dataSigned: 'ADB20420BDE8CDA6771249188817098FCA8CCF8EEF2120A31E3F64F5812026BF'
   }
 }

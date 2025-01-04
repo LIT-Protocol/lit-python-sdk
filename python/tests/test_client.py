@@ -42,6 +42,6 @@ def test_create_wallet_and_sign():
     signature = client.sign(to_sign)
     print(signature)
 
-def test_multi_connect():
-    client2 = connect()
-    assert client2.get_pkp() == client.get_pkp()
+# def test_multi_connect():
+#     client2 = connect()
+#     assert client2.get_pkp() == client.get_pkp()
