@@ -1,5 +1,16 @@
 const fetch = require("node-fetch");
+require("dotenv").config({ path: "../.env" });
 const ethers = require("ethers");
+const { spawn } = require("child_process");
+
+async function startServer() {
+  console.log("Starting server in ", __dirname);
+  const server = spawn("npm", ["run", "start"], {
+    cwd: __dirname,
+    stdio: "inherit",
+  });
+  return server;
+}
 
 async function checkIsReady() {
   try {
@@ -29,6 +40,22 @@ async function waitUntilReady(maxAttempts = 30, delayMs = 1000) {
     await new Promise((resolve) => setTimeout(resolve, delayMs));
   }
   throw new Error("Server failed to become ready in time");
+}
+
+async function testSetAuthToken() {
+  const response = await fetch("http://localhost:3092/setAuthToken", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      authToken: process.env.LIT_POLYGLOT_SDK_TEST_PRIVATE_KEY,
+    }),
+  });
+  const data = await response.json();
+  if (!data.success) {
+    throw new Error("Failed to set auth token");
+  }
 }
 
 async function testExecuteJs() {
@@ -141,10 +168,15 @@ async function testSign() {
 // Run the test with readiness check
 async function runTest() {
   try {
+    const serverHandle = await startServer();
     await waitUntilReady();
+    await testSetAuthToken();
     await testExecuteJs();
     await testCreateWallet();
     await testSign();
+    console.log("All tests passed!");
+    serverHandle.kill();
+    process.exit(0);
   } catch (error) {
     console.error("Test failed:", error);
     process.exit(1);

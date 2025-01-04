@@ -41,6 +41,16 @@ app.use((req, res, next) => {
   next();
 });
 
+// set the wallet used to talk to the Lit Nodes
+app.post("/setAuthToken", (req, res) => {
+  const { authToken } = req.body;
+  app.locals.ethersWallet = new ethers.Wallet(
+    authToken,
+    new ethers.providers.JsonRpcProvider(LIT_RPC.CHRONICLE_YELLOWSTONE)
+  );
+  res.json({ success: true });
+});
+
 // generate session key and get session delegation
 app.post("/isReady", (req, res) => {
   try {
@@ -165,10 +175,6 @@ app.listen(port, async () => {
     litNetwork: LitNetwork.DatilDev,
   });
   await app.locals.litNodeClient.connect();
-  app.locals.ethersWallet = new ethers.Wallet(
-    process.env.LIT_PYTHON_SDK_PRIVATE_KEY,
-    new ethers.providers.JsonRpcProvider(LIT_RPC.CHRONICLE_YELLOWSTONE)
-  );
   // see if we can load the pkp from local storage
   const pkp = localStorage.getItem("pkp");
   if (pkp) {

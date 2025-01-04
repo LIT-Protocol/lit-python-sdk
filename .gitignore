@@ -37,3 +37,7 @@ lit-session-storage/
 
 # Mac
 .DS_Store
+
+# misc
+.env
+.env.local
