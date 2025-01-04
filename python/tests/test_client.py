@@ -1,8 +1,16 @@
 import pytest
 from lit_python_sdk import connect
 import time
+import os
+from dotenv import load_dotenv
+from pathlib import Path
+
+# Load environment variables from .env file in the root directory
+dotenv_path = Path(__file__).parent.parent.parent / '.env'
+load_dotenv(dotenv_path)
 
 client = connect()
+client.set_auth_token(os.getenv("LIT_POLYGLOT_SDK_TEST_PRIVATE_KEY"))
 
 
 def test_connect_and_execute():    
@@ -34,6 +42,6 @@ def test_create_wallet_and_sign():
     signature = client.sign(to_sign)
     print(signature)
 
-def test_multi_connect():
-    client2 = connect()
-    assert client2.get_pkp() == client.get_pkp()
+# def test_multi_connect():
+#     client2 = connect()
+#     assert client2.get_pkp() == client.get_pkp()

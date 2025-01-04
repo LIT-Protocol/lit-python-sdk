@@ -27,7 +27,10 @@ node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# general
 lit-session-storage/
+server.log
 
 # IDE
 .idea/
@@ -37,3 +40,7 @@ lit-session-storage/
 
 # Mac
 .DS_Store
+
+# misc
+.env
+.env.local

@@ -13,9 +13,16 @@ readme = "README.md"
 requires-python = ">=3.7"
 dependencies = [
     "requests>=2.25.0",
-    "eth_account>=0.13.3"
+    "eth_account>=0.13.3",
+    "python-dotenv>=1.0.1",
 ]
 
 [project.urls]
 "Homepage" = "https://github.com/yourusername/lit-python-sdk"
-"Bug Tracker" = "https://github.com/yourusername/lit-python-sdk/issues" 
+"Bug Tracker" = "https://github.com/yourusername/lit-python-sdk/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["lit_python_sdk"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"lit_python_sdk/bundled_server.js" = "lit_python_sdk/bundled_server.js" 

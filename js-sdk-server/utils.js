@@ -5,11 +5,13 @@ const {
   createSiweMessage,
   generateAuthSig,
 } = require("@lit-protocol/auth-helpers");
-const {
-  LIT_ABILITY,
-} = require("@lit-protocol/constants");
+const { LIT_ABILITY } = require("@lit-protocol/constants");
 
 async function getSessionSigs(app) {
+  if (!app.locals.ethersWallet) {
+    throw new Error("No Lit auth token set");
+  }
+
   // get session sigs
   const sessionSigs = await app.locals.litNodeClient.getSessionSigs({
     chain: "ethereum",

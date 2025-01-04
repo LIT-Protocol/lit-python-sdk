@@ -38,6 +38,14 @@ class LitClient:
                 time.sleep(0.1)
                 
         raise TimeoutError("Server failed to start within timeout period")
+    
+    def set_auth_token(self, auth_token: str) -> dict:
+        """Sets the auth token on the Node.js server"""
+        response = requests.post(
+            f"http://localhost:{self.port}/setAuthToken",
+            json={"authToken": auth_token},
+        )
+        return response.json()
 
     def execute_js(self, code: str) -> dict:
         """Executes JavaScript code on the Node.js server"""
