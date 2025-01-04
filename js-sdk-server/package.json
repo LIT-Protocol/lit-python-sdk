@@ -6,7 +6,8 @@
     "start": "node server.js",
     "test:only": "node test.js",
     "test": "concurrently \"node server.js\" \"sleep 2 && node test.js\"",
-    "build": "esbuild server.js --bundle --platform=node --outfile=../python/lit_python_sdk/bundled_server.js"
+    "build": "esbuild server.js --bundle --platform=node --outfile=../python/lit_python_sdk/bundled_server.js",
+    "dev": "esbuild server.js --bundle --platform=node --outfile=../python/lit_python_sdk/bundled_server.js --watch"
   },
   "keywords": [],
   "author": "",
