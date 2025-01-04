@@ -1,0 +1,51 @@
+name: Go SDK Tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "go/**"
+      - "js-sdk-server/**"
+  pull_request:
+    branches: [main]
+    paths:
+      - "go/**"
+      - "js-sdk-server/**"
+jobs:
+  test:
+    runs-on: warp-ubuntu-latest-x64-2x
+    strategy:
+      matrix:
+        go-version: ["1.19", "1.20", "1.21"]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Go ${{ matrix.go-version }}
+        uses: actions/setup-go@v4
+        with:
+          go-version: ${{ matrix.go-version }}
+          cache: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install dependencies
+        working-directory: go/lit_go_sdk
+        run: |
+          go mod download
+          go mod tidy
+
+      - name: Run tests
+        working-directory: go/lit_go_sdk
+        env:
+          LIT_POLYGLOT_SDK_TEST_PRIVATE_KEY: ${{ secrets.LIT_POLYGLOT_SDK_TEST_PRIVATE_KEY }}
+        run: |
+          go test -v ./...
+          if [ -f server.log ]; then
+            echo "Server log contents:"
+            cat server.log
+          fi
