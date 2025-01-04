@@ -8,20 +8,25 @@ class NodeServer:
     def __init__(self, port: int):
         self.port = port
         self.process = None
-        self.server_folder = Path(__file__).parent / "../../js-sdk-server"
+        self.server_path = Path(__file__).parent / "bundled_server.js"
 
     def start(self):
         """Starts the Node.js server process"""
         if self.process is not None:
             return
 
-        log_file = open(self.server_folder / "server.log", "w")
+        if not self.server_path.exists():
+            raise RuntimeError(
+                "Bundled server not found. This is likely an installation issue."
+            )
+
+        log_file = open(Path(__file__).parent / "server.log", "w")
         self.process = subprocess.Popen(
-            ["npm", "start"],
+            ["node", str(self.server_path)],
             env={**os.environ, "PORT": str(self.port)},
             stdout=log_file,
             stderr=log_file,
-            cwd=self.server_folder
+            cwd=Path(__file__).parent
         )
 
     def stop(self):

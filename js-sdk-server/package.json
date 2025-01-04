@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "test:only": "node test.js",
-    "test": "concurrently \"node server.js\" \"sleep 2 && node test.js\""
+    "test": "concurrently \"node server.js\" \"sleep 2 && node test.js\"",
+    "build": "esbuild server.js --bundle --platform=node --outfile=../python/lit_python_sdk/bundled_server.js"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +22,8 @@
     "express": "^4.18.2",
     "node-fetch": "^2.6.9",
     "node-localstorage": "^3.0.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.1"
   }
 }
