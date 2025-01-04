@@ -65,9 +65,9 @@ func main() {
 
 ## API Reference
 
-### NewLitClient(port int) (\*LitClient, error)
+### NewLitClient() (\*LitClient, error)
 
-Creates a new Lit Protocol client. If port is 0, uses the default port (3092).
+Creates a new Lit Protocol client.
 
 ### SetAuthToken(authToken string) (map[string]interface{}, error)
 

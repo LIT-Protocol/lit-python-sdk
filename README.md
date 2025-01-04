@@ -8,7 +8,7 @@ The [Python SDK](./python/README.md) is a wrapper around the Lit JS SDK.
 
 ## Go SDK
 
-The [Go SDK](./go/README.md) is a wrapper around the Lit JS SDK.
+The [Go SDK](./go/lit_go_sdk/README.md) is a wrapper around the Lit JS SDK.
 
 ## Supported Features
 
